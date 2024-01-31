@@ -1,0 +1,14 @@
+.task {
+  margin-top: 1rem;
+  display: flex;
+
+  .iscompleted {
+    padding: 0.7rem;
+    border: none;
+    font-size: 1.2rem;
+    background-color: rgb(16, 195, 16);
+  }
+  .active {
+    background-color: red;
+  }
+}

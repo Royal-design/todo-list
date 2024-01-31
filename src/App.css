@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+.todo {
+  width: 40rem;
+  overflow: hidden;
+  background-color: rgb(62, 63, 62);
+  margin: 2rem auto;
+  padding: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.task-menu {
+  margin-top: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  .task-name {
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: rgb(16, 195, 16);
+  }
+  .task-description {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .task-control {
+    display: flex;
+  }
+  .task-complete {
+    color: white;
+    font-weight: lighter;
+  }
+}
+
+.icons {
+  font-size: 2rem;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  margin-right: 5px;
+  &:hover {
+    color: red;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.check-icon {
+  font-size: 2rem;
+  color: rgb(16, 195, 16);
 }
